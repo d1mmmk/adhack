@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>adhack</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but adhack doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script type="text/JavaScript">
+      window.todosData = {
+        root_group: {
+            type: "group",
+            name: "My tasks",
+            items: [
+                {
+                    type: "item",
+                    name: "Build a tree",
+                    done: false
+                },
+                {
+                    type: "group",
+                    name: "Interview",
+                    items: [
+                        {
+                            type: "item",
+                            name: "read docs",
+                            done: true
+                        },
+                        {
+                            type: "item",
+                            name: "read docs once again",
+                            done: true
+                        },
+                    ]
+                }
+            ]
+        }
+      };
+    </script>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

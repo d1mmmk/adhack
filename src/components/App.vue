@@ -18,7 +18,6 @@ export default{
     },
     methods: {
         addGroup: function(params){
-            console.log(arguments);
             let parent = params.parent || this.todos,
                 name = params.name || 'new group';
 

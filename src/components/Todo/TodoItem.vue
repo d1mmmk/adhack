@@ -28,7 +28,6 @@ export default {
     props: ['todo'],
     components: {TodoItemAdd},
     created: function(){
-        console.log(this.hasChild)
     },
     computed: {
         isGroup: function () {
